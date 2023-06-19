@@ -71,5 +71,6 @@ fi
     --key-type "rsa4096" \
     --email "$EMAIL" \
     --dns "$DNS_PROVIDER" \
+    --dns.resolvers=8.8.8.8,8.8.4.4 \
     "${DOMAINS[@]}" \
     "${CMD[@]}" "$hook_path"
